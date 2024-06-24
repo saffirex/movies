@@ -3,6 +3,11 @@ import pickle
 import pandas as pd
 import requests
 
+st.set_page_config(
+    page_title="Movie Recommendation",
+    page_icon=":movie_camera:")
+
+
 top_n = 10
 request_url = "https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}"
 poster_base_url = "https://image.tmdb.org/t/p/w500"
